@@ -144,12 +144,21 @@ nav a:hover {
   box-shadow: inset 0 0 3px white, 0 0 0 3px #991b1e, 0 0 0 7px black;
 }
 
+#members strong {
+  color: #991b1e;
+}
+
+#members section {
+  height: 175px;
+}
+
 /* FOOTER */
 footer {
   border-top: 1px solid #666;
   text-align: right;
+  margin-bottom: 100px;
 }
 
 footer a {
-  margin: 0 10px;
+  margin: 10px;
 }
