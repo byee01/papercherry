@@ -55,6 +55,25 @@ blockquote {
   font-style: italic;
   line-height: 1;
   font-size: 125%;
+  position: relative;
+}
+
+blockquote:before {
+  position: absolute;
+  content:'“';
+  color: rgb(240, 240, 240);
+  top: -30px;
+  left: -10px;
+  font-size: 10em;
+}
+
+blockquote .attrib:after {
+  position: absolute;
+  content: '”';
+  font-size: 10em;
+  color: rgb(240, 240, 240);
+  right: 0;
+  bottom: -115px;
 }
 
 blockquote .attrib {
