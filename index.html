@@ -13,7 +13,7 @@
   </style>
 </head>
 
-<body>
+<body data-spy="scroll">
 <header>
   <section id="cover" class="row">
     <section class="container">
@@ -37,17 +37,19 @@
 
 
 <section id="project" class="container row">
-  <p>Team papercherry embarked on an 8-month project to discover what's next in the world of cardgiving.</p>
+  <blockquote><p>In an information-rich world, the scarce resource is attention.</p><p class="attrib">&ndash; Herbert Simon, 1969 &ndash;</p></blockquote>
+
+  <p>Team papercherry is developing the greeting card of the future. We're working with HP to envision and prototype how people will acknowledge each other on special occasions in an increasingly digital world.</p>
 </section> <!-- #project -->
 
 <section id="design" class="container row">
   <h3>Design</h3>
-  <p>Design content.</p>
+  <p>During the summer semester, we will be developing a prototype based off of the insights we gained in the spring semester's research phase. We interviewed participants, conducted contextual inquiries, and visited card stores for guerilla research.</p>
 </section> <!-- #design -->
 
 <section id="process" class="container row">
   <h3>Process</h3>
-  <p>Process content.</p>
+  <p>The project started off with a kick-off meeting in January. We worked with HP and discussed the various needs and goals of the projects.</p>
 </section> <!-- #process -->
 
 <section id="team" class="container row">
@@ -97,5 +99,14 @@
   <a href="www.hcii.cmu.edu" title="Human-Computer Interaction Institute home page"><img src="img/logo_hcii.png" alt="HCII Logo"></a>
   <a href="www.cmu.edu" title="Carnegie Mellon University home page"><img src="img/logo_cmu.png" alt="CMU Logo"></a>
 </footer>
+<script type="text/javascript">
+  {% include js/jquery.min.js %}
+  {% include js/bootstrap.min.js %}
+
+  /** Scrolling and stuff **/
+  $('#navbar').scrollspy();
+
+</script>
+
 </body>
 </html>

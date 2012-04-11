@@ -48,6 +48,20 @@ body {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(240, 240, 240)));
 }
 
+blockquote {
+  text-align: center;
+  background: #DDD;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1;
+  font-size: 125%;
+}
+
+blockquote .attrib {
+  font-size: 75%;
+  font-style: normal;
+}
+
 h1 {
   margin: 1em auto;
   font: 0/0 a;
