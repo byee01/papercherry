@@ -28,7 +28,7 @@ button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:poin
 input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
 input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
 textarea{overflow:auto;vertical-align:top;}
-body{margin:0;font-family:Georgia,serif;font-size:18px;line-height:24px;color:#333333}
+body{margin:0;font-family:Tahoma,sans-serif;font-size:18px;line-height:24px;color:#333333}
 a{color:#DB1010;}
 a:hover{color:#E16B6E;text-decoration:underline;}
 .row{margin-left:-20px;*zoom:1;}.row:before,.row:after{display:table;content:"";}

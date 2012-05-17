@@ -40,6 +40,7 @@ html {
 }
 
 body {
+  font-size: 17px;
   overflow-y: scroll;
   background: rgb(240, 240, 240);
   background: -o-radial-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
@@ -49,6 +50,7 @@ body {
 }
 
 blockquote {
+  font-family: Georgia, serif;
   text-align: center;
   background: #DDD;
   padding: 10px;
@@ -81,6 +83,11 @@ blockquote .attrib {
   font-style: normal;
 }
 
+img.circ {
+  border-radius: 50%;
+  float: right;
+}
+
 h1 {
   margin: 1em auto;
   font: 0/0 a;
@@ -111,8 +118,8 @@ h3 {
 }
 
 header {
-  height: 450px;
-  background: url('img/card_bg_d.jpg') no-repeat;
+  height: 600px;
+  background: url('img/card_bg2.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -166,6 +173,7 @@ nav a:hover {
 }
 
 #members li {
+  vertical-align: top;
   display: inline-block;
   list-style-type: none;
   margin: 15px 10px;
@@ -215,7 +223,7 @@ nav a:hover {
 }
 
 #members section {
-  height: 175px;
+  height: 225px;
 }
 
 /* FOOTER */
