@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -9,34 +11,37 @@
     {% include css/screen.css %}
   </style>
   <script type="text/javascript">
-  {% include js/ga.js %}
+    {% include js/ga.js %}
   </script>
 </head>
 
 <body>
 <header>
-
-  <div>
-    <h1 id="logo">Papercherry</h1>
-  <nav>
-  <ul>
-    <li><a href="#project">Research</a></li>
-    <li><a href="#design">Design</a></li>
-    <li><a href="#process">Solution</a></li>
-    <li><a href="#team">Team</a></li>
-  </ul>
-
-  </nav>
-
-  </div>
+  <section id="cover" class="row">
+    <section class="container">
+      <h1>papercherry</h1>
+      <nav>
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section> <!-- #cover -->
+  <section class="container row">
+    <h2 id="greet">Greeting Cards 2.0</h2>
+    <h2 id="future">&ndash; The Future of Social Expressions &ndash;</h2>
+  </section>
 </header>
 
 {{ content }}
 
 <footer class="container">
-  <a href="http://www.hp.com" title="HP corporate home page"><img src="img/logo_hp.png" alt="HP Logo"></a>
-  <a href="http://www.hcii.cmu.edu" title="Human-Computer Interaction Institute home page"><img src="img/logo_hcii.png" alt="HCII Logo"></a>
-  <a href="http://www.cmu.edu" title="Carnegie Mellon University home page"><img src="img/logo_cmu.png" alt="CMU Logo"></a>
+  <a href="http://www.hp.com" title="HP corporate home page" target="_blank"><img src="img/logo_hp.png" alt="HP Logo"></a>
+  <a href="http://www.hcii.cmu.edu" title="Human-Computer Interaction Institute home page" target="_blank"><img src="img/logo_hcii.png" alt="HCII Logo"></a>
+  <a href="http://www.cmu.edu" title="Carnegie Mellon University home page" target="_blank"><img src="img/logo_cmu.png" alt="CMU Logo"></a>
 </footer>
 </body>
 </html>

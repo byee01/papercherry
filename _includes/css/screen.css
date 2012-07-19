@@ -1,47 +1,249 @@
-header {
-  background: url('/img/card_bg2.jpg') no-repeat center;
-  background-size: cover;
-  padding: 100px 0;
-  text-align: center;
-}
-
-header div {
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 0;
+/*
+  Colors
+  Red: #991b1e
+*/
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @-webkit-keyframes slide-in {
   0% {
+    top: -100px;
     opacity: 0;
   }
 
+  80% {
+    top: 10px;
+  }
+
   100% {
+    top: 0;
     opacity: 1;
   }
 }
 
-header h1 {
-  background: url('/img/logo_s.png') no-repeat center;
-  display: block;
-  height: 50px;
-  overflow: hidden;
-  text-indent: -3000px;
+@-webkit-keyframes highlight {
+
+}
+
+html {
+  border-top: 4px solid #991b1e;
+}
+
+body {
+  font-size: 17px;
+  overflow-y: scroll;
+  background: rgb(240, 240, 240);
+  background: -o-radial-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+  background: -moz-radial-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+  background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(240, 240, 240)));
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  text-align: center;
+  background: #DDD;
+  padding: 10px;
+  font-style: italic;
+  line-height: 1;
+  font-size: 125%;
+  position: relative;
+  width: 550px;
+}
+
+blockquote:before {
+  position: absolute;
+  content:'“';
+  color: rgb(240, 240, 240);
+  top: -33px;
+  left: -10px;
+  font-size: 9em;
+}
+
+blockquote .attrib:after {
+  position: absolute;
+  content: '”';
+  font-size: 10em;
+  color: rgb(240, 240, 240);
+  right: 0;
+  bottom: -115px;
+}
+
+blockquote .attrib {
+  font-size: 75%;
+  font-style: normal;
+}
+
+img.circ {
+  border-radius: 50%;
+  float: right;
+  margin: 10px;
+}
+
+h1 {
+  margin: 1em auto;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background: url('img/logo_s.png') no-repeat;
+  height: 45px;
+  position: relative;
   -webkit-animation-name: slide-in;
   -webkit-animation-timing-function: ease-in;
   -webkit-animation-iteration-count: once;
   -webkit-animation-duration: 0.5s;
 }
 
+h2 {
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 0.9;
+  color: #FFF;
+  text-align: center;
+}
+
+h3 {
+   font-family: 'BebasNeueRegular', sans-serif;
+   font-weight: normal;
+   font-size: 2em;
+   border-bottom: 3px solid #991b1e;
+   padding-bottom: 6px;
+   margin-bottom: 0;
+}
+
+header {
+  height: 600px;
+  background: url('img/card_bg2.jpg') no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  width: 295px;
+}
+
+header h2 {
+  margin: 0;
+  text-shadow: 1px 1px 1px black;
+}
+
+#cover {
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 75px;
+  margin-bottom: 75px;
+}
+
+#future {
+  font-size:2em;
+  color: #991b1e;
+}
+
+nav {
+  text-align: center;
+}
+
 nav ul {
+  margin-left: -40px;
+}
+
+nav li {
   list-style-type: none;
-  padding: 0;
+  display: inline-block;
 }
 
-nav ul li {
-  display: inline;
+nav a {
+  font-family: 'BebasNeueRegular', sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
 }
 
-.container {
-  margin: 0 auto;
-  width: 940px;
+nav a:hover {
+  text-decoration: none;
+}
+
+/* TEAM */
+#members {
+  text-align: center;
+}
+
+#members li {
+  vertical-align: top;
+  display: inline-block;
+  list-style-type: none;
+  margin: 15px 10px;
+  width: 270px;
+}
+
+#members a {
+  text-decoration: none;
+}
+
+#members a:hover {
+  text-decoration: underline;
+}
+
+#members figure {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 3px white, 0 0 0 3px #991b1e, 0 0 0 7px black;
+}
+
+#rachel {
+  background: url('img/team_rachel.jpg') no-repeat top left;
+}
+#rachel:hover {
+  background: url('img/team_rachel.jpg') no-repeat bottom left;
+}
+#nick {
+  background: url('img/team_nick.jpg') no-repeat top left;
+}
+#nick:hover {
+  background: url('img/team_nick.jpg') no-repeat bottom left;
+}
+#arun {
+  background: url('img/team_arun.jpg') no-repeat top left;
+}
+#arun:hover {
+  background: url('img/team_arun.jpg') no-repeat bottom left;
+}
+#brian {
+  background: url('img/team_brian.jpg') no-repeat top left;
+}
+#brian:hover {
+  background: url('img/team_brian.jpg') no-repeat bottom left;
+}
+#julien {
+  background: url('img/team_julien.jpg') no-repeat top left;
+}
+#julien:hover {
+  background: url('img/team_julien.jpg') no-repeat bottom left;
+}
+
+#members strong {
+  color: #991b1e;
+}
+
+#members section {
+  height: 225px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #666;
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+footer a {
+  margin: 10px;
 }
